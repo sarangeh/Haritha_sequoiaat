@@ -1,0 +1,121 @@
+Q) A program that print left arrow(less than symbol) pattern using any single input from user. The input can be letter,symbols, etc...
+
+
+
+import java.util.*;
+
+public class  Lessthan
+{
+    public static void main(String[] args)
+    {
+             
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("Enter the limit you need : ");
+	    int n = sc.nextInt();	 
+        System.out.print("Enter Symbol for printing less than : ");
+        char l = sc.next().charAt(0);
+	    for(int i=1;i<=n;i++)
+        { 
+	        for(int j=1;j<=n-i;j++)
+            { 
+                System.out.print(" ");
+		 
+                    	
+            }
+		    for(int j=i;j<=n;j++)
+                
+            {
+                             
+                    	
+                System.out.print(l);
+ 
+            }
+		 
+    
+	        System.out.println();
+	    
+        }            
+        for(int i=1;i<n;i++)
+        {
+	        for(int j=0;j<i;j++)
+                
+            {
+                              
+                System.out.print(" ");
+		  
+ 
+            }
+		    for(int j=0;j<=i;j++)
+                
+            {
+                           
+                System.out.print(l);
+ 
+            } 
+    
+	        System.out.println();
+	    
+        }    
+ 
+                
+    }
+}
+
+
+
+
+Output:
+
+1)
+Enter the limit you need : 
+5
+Enter Symbol for printing less than : klo
+    kkkkk
+   kkkk
+  kkk
+ kk
+k
+ kk
+  kkk
+   kkkk
+    kkkkk
+
+
+
+
+2)
+Enter the limit you need : 
+10
+Enter Symbol for printing less than : @
+         @@@@@@@@@@
+        @@@@@@@@@
+       @@@@@@@@
+      @@@@@@@
+     @@@@@@
+    @@@@@
+   @@@@
+  @@@
+ @@
+@
+ @@
+  @@@
+   @@@@
+    @@@@@
+     @@@@@@
+      @@@@@@@
+       @@@@@@@@
+        @@@@@@@@@
+         @@@@@@@@@@
+3)
+Enter the limit you need : 
+5
+Enter Symbol for printing less than : *
+    *****
+   ****
+  ***
+ **
+*
+ **
+  ***
+   ****
+    *****
